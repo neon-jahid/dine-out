@@ -1,5 +1,4 @@
 import Item from './Item';
-import Increment from '../assets/Icon/Increment';
 
 function AllItems() {
     return (
@@ -9,16 +8,15 @@ function AllItems() {
                 <Item
                     ItemName='Burger'
                     ItemPrice={100}
+                    btn='Increment'
                 />
                 <Item
                     ItemName='Chicken Nuggets'
                     ItemPrice={300}
-                    btn={<Increment />}
                 />
                 <Item
                     ItemName='Submarine Sandwich'
                     ItemPrice={300}
-                    btn={<Increment />}
                 />
                 <Item
                     ItemName='Pizza Slices'

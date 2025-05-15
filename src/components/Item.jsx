@@ -1,4 +1,5 @@
-import Button from './Button';
+import DecrementButton from './DecrementButton';
+import IncrementButton from './IncrementButton';
 
 function Item({ ItemName, ItemPrice, btn }) {
     return (
@@ -16,10 +17,7 @@ function Item({ ItemName, ItemPrice, btn }) {
                     <p className='text-xs text-gray-400'>{ItemPrice}</p>
                 </div>
             </div>
-            {/* <button className='w-8 h-8 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-colors duration-300'>
-                <Increment  />
-            </button> */}
-            <Button>{btn}</Button>
+            {btn === 'Increment' ? <IncrementButton /> : <DecrementButton />}
         </div>
     );
 }
